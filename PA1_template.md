@@ -5,7 +5,7 @@ Loading and preprocessing the data
 
 
 ```r
-setwd("E:/Project 1")
+setwd("C:/Users/Dan/Documents/project 1/RepData_PeerAssessment1")
 data <- read.csv("activity.csv",header = T,stringsAsFactor = F)
 data$date <- as.Date(x = data$date, format ="%Y-%m-%d")
 ```
