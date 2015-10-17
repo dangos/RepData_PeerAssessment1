@@ -1,6 +1,4 @@
-output:
-    html_document:
-        keep_md: yes
+# PA_Assignment1
 
 Loading and preprocessing the data
 =================================
@@ -29,7 +27,7 @@ median <- median(dataFrame$steps)
 ggplot(dataFrame, aes(x=dataFrame$dates, y=dataFrame$steps)) + geom_bar(stat="identity") + theme(axis.text.x = element_text(angle = 90, hjust = 1)) + labs(title = "Activity Monitoring Devices") + labs(y = "Number of steps") + labs(x = "Dates")
 ```
 
-![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2-1.png) 
+![](PA1_template_files/figure-html/unnamed-chunk-2-1.png) 
 
 **Mean:** 9354.23
 
@@ -51,7 +49,7 @@ plot(x = dataFrame$minInterval, y = dataFrame$avgSteps, type = "l",col="blue", x
 abline(v = avgMaxStep, col = "red")
 ```
 
-![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3-1.png) 
+![](PA1_template_files/figure-html/unnamed-chunk-3-1.png) 
 
 The interval **835** contains the max number of steps on average of the 5 minute interval which is 206.17.
 
@@ -84,7 +82,7 @@ median2 <- median(dataFrame$steps)
 ggplot(dataFrame, aes(x=dataFrame$dates, y=dataFrame$steps)) + geom_bar(stat="identity") + theme(axis.text.x = element_text(angle = 90, hjust = 1)) + labs(title = "Activity Monitoring Devices") + labs(y = "Number of steps") + labs(x = "Dates")
 ```
 
-![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4-1.png) 
+![](PA1_template_files/figure-html/unnamed-chunk-4-1.png) 
 
 
 **Total NAs:** 2304
@@ -127,5 +125,5 @@ plot(stepsWeekEnd, type = "l", ylab = "Steps on weekend")
 plot(stepsWeek, type = "l", ylab = "Steps on week")
 ```
 
-![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5-1.png) 
+![](PA1_template_files/figure-html/unnamed-chunk-5-1.png) 
 
